@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 협업 규칙 확인
+    url: https://github.com/ync-capstone-desgin/capstone-docs/blob/main/CONTRIBUTING.md
+    about: Issue 작성 전 브랜치, 커밋, PR 및 Issue 규칙을 확인해 주세요.
+

@@ -1,0 +1,36 @@
+name: 문서 수정
+description: 문서의 오류, 누락 또는 개선사항을 등록합니다.
+title: "[문서] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: path
+    attributes:
+      label: 대상 문서
+      description: 수정할 파일 경로를 작성해 주세요.
+      placeholder: docs/<이름>/proposal.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 문제 또는 변경 이유
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 제안 변경사항
+      description: 원하는 결과를 구체적으로 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      value: |
+        - [ ] 문서 내용 수정
+        - [ ] 링크와 Markdown 형식 확인
+        - [ ] 민감정보 포함 여부 확인
+

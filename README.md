@@ -20,6 +20,8 @@ docs/
 
 세부 작성 규칙은 [docs/README.md](docs/README.md)를 확인하세요.
 
+브랜치, 커밋, Pull Request와 Issue 규칙은 [CONTRIBUTING.md](CONTRIBUTING.md)를 확인하세요.
+
 ## 현재 프로젝트 주제
 
 - 협력업체 정보 통합관리

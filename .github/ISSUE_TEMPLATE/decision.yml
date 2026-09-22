@@ -1,0 +1,37 @@
+name: 팀 결정
+description: 팀 합의가 필요한 선택지와 논점을 등록합니다.
+title: "[결정] "
+labels:
+  - decision
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 결정할 내용
+      description: 팀이 결정해야 할 질문을 한 문장으로 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: 배경과 제약사항
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: 선택지
+      description: 각 선택지의 장단점을 함께 작성해 주세요.
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 결정 목표일
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: result
+    attributes:
+      label: 최종 결정
+      description: 논의가 끝난 뒤 결정과 이유를 기록합니다.
+

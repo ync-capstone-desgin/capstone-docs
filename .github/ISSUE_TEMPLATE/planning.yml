@@ -1,0 +1,40 @@
+name: 기획 및 조사
+description: 새로운 기획, 조사 또는 미팅 준비 작업을 등록합니다.
+title: "[기획] "
+labels:
+  - planning
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 배경
+      description: 이 작업이 필요한 이유와 현재 상황을 작성해 주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 작업 내용
+      description: 수행할 내용을 체크리스트로 작성해 주세요.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: 완료 조건
+      description: 무엇이 확인되면 이 Issue를 완료할 수 있는지 작성해 주세요.
+    validations:
+      required: true
+  - type: input
+    id: due
+    attributes:
+      label: 목표일
+      placeholder: YYYY-MM-DD
+  - type: textarea
+    id: references
+    attributes:
+      label: 참고자료
+      description: 관련 문서, Issue 또는 PR 링크를 작성해 주세요.
+
