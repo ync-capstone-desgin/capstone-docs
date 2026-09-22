@@ -1,0 +1,22 @@
+# Operating system
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+coverage/
+
+# Runtime files
+*.log
+
