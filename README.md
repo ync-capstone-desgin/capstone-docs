@@ -1,30 +1,28 @@
-# 한국농산 협력업체 통합관리 PoC
+# 한국농산 캡스톤 디자인 기획 자료
 
-한국농산의 협력업체, 계약, 인증, 발주 및 납기 자료를 통합 관리하고 계약 및 인증 만료 알림 기능을 검증하기 위한 캡스톤 디자인 프로젝트입니다.
+한국농산 캡스톤 디자인 프로젝트의 팀원별 초기 기획 자료를 모으는 저장소입니다.
 
-## 현재 단계
+이 저장소의 문서는 팀 기획안을 확정하기 전 각 팀원이 조사한 내용, 아이디어, 미팅 질문과 개발 계획을 공유하기 위한 자료입니다. 통합 기획서는 팀원별 초안을 검토한 뒤 별도로 작성합니다.
 
-- 기업 미팅 전 요구사항 및 문제 정의
-- 팀원별 기획안 작성
-- PoC 범위와 우선순위 합의
+## 폴더 구조
 
-## 문서 작성
+각 팀원은 `docs` 아래에 자신의 이름 또는 팀에서 합의한 식별자로 폴더를 하나 만들고, 모든 개인 문서를 해당 폴더 안에서 관리합니다.
 
-팀원별 기획서는 `docs/plans/<GitHub-ID>/` 폴더에 작성합니다. 상세한 파일명과 작성 규칙은 [docs/README.md](docs/README.md)를 확인하세요.
+```text
+docs/
+  JinsuBae2/
+    proposal.md
+    questionnaire.md
+    schedule.md
+  teammate-name/
+    proposal.md
+```
 
-기업 미팅용 공통 문서는 다음에서 확인할 수 있습니다.
+세부 작성 규칙은 [docs/README.md](docs/README.md)를 확인하세요.
 
-- [사전 기획서](docs/project/01-pre-meeting-proposal.md)
-- [PoC 일정표](docs/project/02-poc-schedule.md)
-- [미팅 질문지](docs/meeting/01-questionnaire.md)
-- [미팅 진행안](docs/meeting/02-agenda.md)
-- [자료 요청 목록](docs/meeting/03-data-request-list.md)
-- [회의 결과 기록지](docs/meeting/04-meeting-notes-template.md)
+## 현재 프로젝트 주제
 
-## 예정 범위
-
-- 협력업체 기본정보 통합관리
+- 협력업체 정보 통합관리
 - 계약 및 인증 자료 관리
-- 계약 및 인증 만료 예정 알림
-- 발주 및 납기 현황 조회
-- 관리자 대시보드
+- 계약 및 인증 만료 알림
+- 발주 및 납기자료 관리 방안 검토
