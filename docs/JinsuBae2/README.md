@@ -13,6 +13,7 @@
 | [proposal.md](proposal.md) | 문제 정의, 목표, PoC 범위, 기능, 화면과 검증 기준 |
 | [technical-design.md](technical-design.md) | 논리 시스템 구조, 데이터 흐름과 데이터 모델 |
 | [prototype-design.md](prototype-design.md) | 샘플 프로토타입 기술 스택, API, ERD, 화면과 구현 순서 |
+| [prototype-meeting-questions.md](prototype-meeting-questions.md) | 프로토타입 시연 기반 미팅 질문지: 범위 확인, 현재 가정별 질문과 영향 |
 | [meeting-preparation.md](meeting-preparation.md) | 미팅 진행안, 질문지, 자료요청, 가설과 회의록 양식 |
 | [schedule.md](schedule.md) | 요구사항 확인부터 최종 시연까지의 12주 일정 |
 
