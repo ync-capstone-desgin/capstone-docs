@@ -3,7 +3,7 @@
 - 작성자: JinsuBae2
 - 최종 수정일: 2026-09-29
 - 상태: 초안
-- 관련 문서: [proposal.md](proposal.md)(기획서), [prototype-design.md](prototype-design.md)(프로토타입 설계), [프로토타입 사용 설명서](https://github.com/ync-capstone-desgin/prototype-JinsuBae2/blob/main/docs/user-guide.md)
+- 관련 문서: [initial-proposal.md](initial-proposal.md)(기획서), [prototype-design.md](prototype-design.md)(프로토타입 설계), [프로토타입 사용 설명서](https://github.com/ync-capstone-desgin/prototype-JinsuBae2/blob/main/docs/user-guide.md)
 
 ## 1. 미팅 목표
 
