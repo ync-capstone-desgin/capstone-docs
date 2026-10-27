@@ -5,7 +5,7 @@
 - 상태: 초안
 - 구현: [ync-capstone-desgin/prototype-JinsuBae2](https://github.com/ync-capstone-desgin/prototype-JinsuBae2) — 1~4단계 구현 완료, 실제 구현과 달라진 점은 [11장](#11-구현-결과와-설계-변경-사항)에 정리
 
-[proposal.md](proposal.md)의 기능 요구사항(FR)과 검증 시나리오(VT), [technical-design.md](technical-design.md)의 논리 구조·데이터 모델을 기준으로 **실제로 실행 가능한 샘플 프로토타입**의 기술 스택, 구조, 화면, API를 구체화한다. 기업 미팅 전이므로 `미팅 확인 필요` 항목은 가설로 두고, 바뀌어도 영향이 작도록 경계를 나눈다.
+[proposal.md](initial-proposal.md)의 기능 요구사항(FR)과 검증 시나리오(VT), [technical-design.md](https://github.com/ync-capstone-desgin/capstone-docs/blob/personal-drafts/docs/JinsuBae2/technical-design.md)의 논리 구조·데이터 모델을 기준으로 **실제로 실행 가능한 샘플 프로토타입**의 기술 스택, 구조, 화면, API를 구체화한다. 기업 미팅 전이므로 `미팅 확인 필요` 항목은 가설로 두고, 바뀌어도 영향이 작도록 경계를 나눈다.
 
 ## 1. 프로토타입 목표와 범위
 
@@ -39,7 +39,7 @@
 
 ### 2.2 데이터베이스: "자사 시스템에 맞는" 선택
 
-한국농산이 쓰는 ERP·DB는 아직 모른다(`미팅 확인 필요`, [미팅 질문](meeting-preparation.md) P-04·D-05). 국내 중견기업 ERP는 제품별로 기반 DB가 다르다.
+한국농산이 쓰는 ERP·DB는 아직 모른다(`미팅 확인 필요`, [미팅 질문](meeting-questions.md) P-04·D-05). 국내 중견기업 ERP는 제품별로 기반 DB가 다르다.
 
 | 한국농산 환경(가설) | 권장 DB | 비고 |
 |---|---|---|
@@ -293,7 +293,7 @@ erDiagram
   }
 ```
 
-- 갱신은 기존 행 수정이 아니라 **새 계약·인증 행 등록 + `prev_id` 연결 + 이전 행 `active=false`**. 과거 이력이 자동으로 남는다([미팅 질문](meeting-preparation.md) C-05).
+- 갱신은 기존 행 수정이 아니라 **새 계약·인증 행 등록 + `prev_id` 연결 + 이전 행 `active=false`**. 과거 이력이 자동으로 남는다([미팅 질문](meeting-questions.md) C-05).
 - `supplier.code`는 업체코드 체계를 몰라 우선 자체 채번(`SUP-0001`)하고, 기존 ERP 코드가 있으면 그 값을 쓴다.
 - 파일 원본 저장은 보안·보관정책이 정해지지 않아 PoC에서는 **링크(`document_url`)만** 저장한다. 원본 저장이 허용되면 `attachment` 테이블을 추가한다.
 - 테이블은 기능 단계마다 Flyway 마이그레이션으로 나눴다: `V1` 사용자·업체, `V2` 인증종류·계약·인증, `V3` 알림.

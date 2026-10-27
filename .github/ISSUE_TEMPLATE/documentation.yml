@@ -9,7 +9,7 @@ body:
     attributes:
       label: 대상 문서
       description: 수정할 파일 경로를 작성해 주세요.
-      placeholder: docs/<이름>/proposal.md
+      placeholder: docs/team/requirements.md
     validations:
       required: true
   - type: textarea
